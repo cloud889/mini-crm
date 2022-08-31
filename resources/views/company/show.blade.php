@@ -67,11 +67,11 @@
                                   <a href="/employees/{{$employee->id}}/edit"><button class="btn btn-primary"><i class="fa-solid fa-pen"></i></button></a>
                                 </div>
                                 <div class="options">
-                                  <form action="/employee/{{$employee->id}}" method="POST" style="margin:0px">
+                                  {{-- <form action="/employee/{{$employee->id}}" method="POST" style="margin:0px">
                                     @csrf
                                     @method('DELETE')
                                       <button class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
-                                  </form>
+                                  </form> --}}
                                 </div>
                               </div>
                             </td>
