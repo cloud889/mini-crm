@@ -39,7 +39,7 @@
                 <div class="tabless ">
                     <div class="mb-10 d-flex justify-content-end">
                         <a href="/company/create"><button type="button" class="btn btn-primary mr-10" style="margin:0px 5px">company <i class="fa-solid fa-plus"></i></button></a>
-                        <a href="/employees/{{$company->id}}/create"><button class="btn btn-success"style="margin:0px 5px">employees <i class="fa-solid fa-plus"></i></button></a>
+                      
                     </div>
                     {{-- modal --}}
                     
@@ -67,7 +67,7 @@
                                   <a href="/employees/{{$employee->id}}/edit"><button class="btn btn-primary"><i class="fa-solid fa-pen"></i></button></a>
                                 </div>
                                 <div class="options">
-                                  <form action="/" method="POST" style="margin:0px">
+                                  <form action="/employee/{{$employee->id}}" method="POST" style="margin:0px">
                                     @csrf
                                     @method('DELETE')
                                       <button class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>

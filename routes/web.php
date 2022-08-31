@@ -35,6 +35,7 @@ Route::controller(EmployeeController::class)->group(function(){
     Route::post('/employees/{company}','store');
     Route::get('/employees/{employee}/edit','edit');
     Route::put('/employees/{employee}', 'update');
+    Route::delete('/employee/{employee}' , 'destroy');
 });
 
 // Route::get('/', [CompanyController::class , 'index']);

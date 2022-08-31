@@ -15,11 +15,12 @@ return new class extends Migration
     {
         Schema::create('employees', function (Blueprint $table) {
             $table->id();
+            $table->integer("company_id")->constrained()->onDelete('cascade');
             $table->string("firstName");
             $table->string("lastName");
             $table->string("email");
             $table->string("phone");   
-            $table->integer("company_id");
+            
             $table->timestamps();
         });
     }
